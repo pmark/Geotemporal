@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6894B7B1471CB2500DBDAA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6894B7A1471CB2500DBDAA4 /* UIKit.framework */; };
+		A6894B7D1471CB2500DBDAA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6894B7C1471CB2500DBDAA4 /* Foundation.framework */; };
+		A6894B7F1471CB2500DBDAA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6894B7E1471CB2500DBDAA4 /* CoreGraphics.framework */; };
+		A6894B851471CB2500DBDAA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6894B831471CB2500DBDAA4 /* InfoPlist.strings */; };
+		A6894B871471CB2500DBDAA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6894B861471CB2500DBDAA4 /* main.m */; };
+		A6894B8B1471CB2500DBDAA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6894B8A1471CB2500DBDAA4 /* AppDelegate.m */; };
+		A6894B8E1471CB2500DBDAA4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6894B8D1471CB2500DBDAA4 /* FirstViewController.m */; };
+		A6894B901471CB2500DBDAA4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894B8F1471CB2500DBDAA4 /* first.png */; };
+		A6894B921471CB2500DBDAA4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894B911471CB2500DBDAA4 /* first@2x.png */; };
+		A6894B951471CB2500DBDAA4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6894B941471CB2500DBDAA4 /* SecondViewController.m */; };
+		A6894B971471CB2500DBDAA4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894B961471CB2500DBDAA4 /* second.png */; };
+		A6894B991471CB2500DBDAA4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894B981471CB2500DBDAA4 /* second@2x.png */; };
+		A6894B9C1471CB2500DBDAA4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6894B9A1471CB2500DBDAA4 /* FirstViewController.xib */; };
+		A6894B9F1471CB2500DBDAA4 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6894B9D1471CB2500DBDAA4 /* SecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A6894B761471CB2400DBDAA4 /* Bar Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bar Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6894B7A1471CB2500DBDAA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6894B7C1471CB2500DBDAA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6894B7E1471CB2500DBDAA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A6894B821471CB2500DBDAA4 /* Bar Finder-Info.plist */ = {isa = PBXFileReference; path = "Bar Finder-Info.plist"; sourceTree = "<group>"; };
+		A6894B841471CB2500DBDAA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A6894B861471CB2500DBDAA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6894B881471CB2500DBDAA4 /* Bar Finder-Prefix.pch */ = {isa = PBXFileReference; path = "Bar Finder-Prefix.pch"; sourceTree = "<group>"; };
+		A6894B891471CB2500DBDAA4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6894B8A1471CB2500DBDAA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6894B8C1471CB2500DBDAA4 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		A6894B8D1471CB2500DBDAA4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		A6894B8F1471CB2500DBDAA4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		A6894B911471CB2500DBDAA4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		A6894B931471CB2500DBDAA4 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		A6894B941471CB2500DBDAA4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A6894B961471CB2500DBDAA4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		A6894B981471CB2500DBDAA4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		A6894B9B1471CB2500DBDAA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		A6894B9E1471CB2500DBDAA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6894B731471CB2400DBDAA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6894B7B1471CB2500DBDAA4 /* UIKit.framework in Frameworks */,
+				A6894B7D1471CB2500DBDAA4 /* Foundation.framework in Frameworks */,
+				A6894B7F1471CB2500DBDAA4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6894B6B1471CB2400DBDAA4 = {
+			isa = PBXGroup;
+			children = (
+				A6894B801471CB2500DBDAA4 /* Bar Finder */,
+				A6894B791471CB2500DBDAA4 /* Frameworks */,
+				A6894B771471CB2400DBDAA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6894B771471CB2400DBDAA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6894B761471CB2400DBDAA4 /* Bar Finder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6894B791471CB2500DBDAA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6894B7A1471CB2500DBDAA4 /* UIKit.framework */,
+				A6894B7C1471CB2500DBDAA4 /* Foundation.framework */,
+				A6894B7E1471CB2500DBDAA4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6894B801471CB2500DBDAA4 /* Bar Finder */ = {
+			isa = PBXGroup;
+			children = (
+				A6894B891471CB2500DBDAA4 /* AppDelegate.h */,
+				A6894B8A1471CB2500DBDAA4 /* AppDelegate.m */,
+				A6894B8C1471CB2500DBDAA4 /* FirstViewController.h */,
+				A6894B8D1471CB2500DBDAA4 /* FirstViewController.m */,
+				A6894B8F1471CB2500DBDAA4 /* first.png */,
+				A6894B911471CB2500DBDAA4 /* first@2x.png */,
+				A6894B931471CB2500DBDAA4 /* SecondViewController.h */,
+				A6894B941471CB2500DBDAA4 /* SecondViewController.m */,
+				A6894B961471CB2500DBDAA4 /* second.png */,
+				A6894B981471CB2500DBDAA4 /* second@2x.png */,
+				A6894B9A1471CB2500DBDAA4 /* FirstViewController.xib */,
+				A6894B9D1471CB2500DBDAA4 /* SecondViewController.xib */,
+				A6894B811471CB2500DBDAA4 /* Supporting Files */,
+			);
+			path = "Bar Finder";
+			sourceTree = "<group>";
+		};
+		A6894B811471CB2500DBDAA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6894B821471CB2500DBDAA4 /* Bar Finder-Info.plist */,
+				A6894B831471CB2500DBDAA4 /* InfoPlist.strings */,
+				A6894B861471CB2500DBDAA4 /* main.m */,
+				A6894B881471CB2500DBDAA4 /* Bar Finder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6894B751471CB2400DBDAA4 /* Bar Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6894BA21471CB2500DBDAA4 /* Build configuration list for PBXNativeTarget "Bar Finder" */;
+			buildPhases = (
+				A6894B721471CB2400DBDAA4 /* Sources */,
+				A6894B731471CB2400DBDAA4 /* Frameworks */,
+				A6894B741471CB2400DBDAA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bar Finder";
+			productName = "Bar Finder";
+			productReference = A6894B761471CB2400DBDAA4 /* Bar Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6894B6D1471CB2400DBDAA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A6894B701471CB2400DBDAA4 /* Build configuration list for PBXProject "Bar Finder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A6894B6B1471CB2400DBDAA4;
+			productRefGroup = A6894B771471CB2400DBDAA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6894B751471CB2400DBDAA4 /* Bar Finder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6894B741471CB2400DBDAA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6894B851471CB2500DBDAA4 /* InfoPlist.strings in Resources */,
+				A6894B901471CB2500DBDAA4 /* first.png in Resources */,
+				A6894B921471CB2500DBDAA4 /* first@2x.png in Resources */,
+				A6894B971471CB2500DBDAA4 /* second.png in Resources */,
+				A6894B991471CB2500DBDAA4 /* second@2x.png in Resources */,
+				A6894B9C1471CB2500DBDAA4 /* FirstViewController.xib in Resources */,
+				A6894B9F1471CB2500DBDAA4 /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6894B721471CB2400DBDAA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6894B871471CB2500DBDAA4 /* main.m in Sources */,
+				A6894B8B1471CB2500DBDAA4 /* AppDelegate.m in Sources */,
+				A6894B8E1471CB2500DBDAA4 /* FirstViewController.m in Sources */,
+				A6894B951471CB2500DBDAA4 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6894B831471CB2500DBDAA4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6894B841471CB2500DBDAA4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A6894B9A1471CB2500DBDAA4 /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6894B9B1471CB2500DBDAA4 /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		A6894B9D1471CB2500DBDAA4 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6894B9E1471CB2500DBDAA4 /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6894BA01471CB2500DBDAA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6894BA11471CB2500DBDAA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6894BA31471CB2500DBDAA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bar Finder/Bar Finder-Prefix.pch";
+				INFOPLIST_FILE = "Bar Finder/Bar Finder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A6894BA41471CB2500DBDAA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bar Finder/Bar Finder-Prefix.pch";
+				INFOPLIST_FILE = "Bar Finder/Bar Finder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6894B701471CB2400DBDAA4 /* Build configuration list for PBXProject "Bar Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6894BA01471CB2500DBDAA4 /* Debug */,
+				A6894BA11471CB2500DBDAA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6894BA21471CB2500DBDAA4 /* Build configuration list for PBXNativeTarget "Bar Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6894BA31471CB2500DBDAA4 /* Debug */,
+				A6894BA41471CB2500DBDAA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6894B6D1471CB2400DBDAA4 /* Project object */;
+}
