@@ -1,5 +1,5 @@
 //
-//  ListViewController.h
+//  BarViewController.h
 //  Bar Finder
 //
 //  Created by P. Mark Anderson on 11/14/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListViewController : UIViewController
-
-- (IBAction)selectBar:(id)sender;
+@interface BarViewController : UIViewController
 
 @end

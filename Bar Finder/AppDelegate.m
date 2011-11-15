@@ -16,15 +16,13 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarController;// = _tabBarController;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    
-    // Make nav controllers for each view controller.
-    
+    // Make nav controllers for each view controller.    
     
     UIViewController *listvc = [[ListViewController alloc] initWithNibName:@"ListViewController" bundle:nil];
     UINavigationController *listnav = [[UINavigationController alloc] initWithRootViewController:listvc];

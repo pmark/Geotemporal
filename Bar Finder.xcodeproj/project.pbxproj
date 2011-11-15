@@ -21,7 +21,6 @@
 		A6894B991471CB2500DBDAA4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894B981471CB2500DBDAA4 /* second@2x.png */; };
 		A6894B9C1471CB2500DBDAA4 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6894B9A1471CB2500DBDAA4 /* ListViewController.xib */; };
 		A6894B9F1471CB2500DBDAA4 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6894B9D1471CB2500DBDAA4 /* MapViewController.xib */; };
-		A6894BAA1471E03A00DBDAA4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6894BA91471E03A00DBDAA4 /* MainWindow.xib */; };
 		A6894DD11471E34500DBDAA4 /* 01-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894BB21471E34300DBDAA4 /* 01-refresh.png */; };
 		A6894DD21471E34500DBDAA4 /* 01-refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894BB31471E34300DBDAA4 /* 01-refresh@2x.png */; };
 		A6894DD31471E34500DBDAA4 /* 02-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894BB41471E34300DBDAA4 /* 02-redo.png */; };
@@ -563,22 +562,6 @@
 		A6894FEB1471E34500DBDAA4 /* 59-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894DCE1471E34400DBDAA4 /* 59-info@2x.png */; };
 		A6894FEC1471E34500DBDAA4 /* 60-dialpad.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894DCF1471E34400DBDAA4 /* 60-dialpad.png */; };
 		A6894FED1471E34500DBDAA4 /* 60-dialpad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894DD01471E34400DBDAA4 /* 60-dialpad@2x.png */; };
-		A68950041471E6B700DBDAA4 /* 3dar.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6894FEF1471E6B700DBDAA4 /* 3dar.plist */; };
-		A68950051471E6B700DBDAA4 /* 3dar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894FF21471E6B700DBDAA4 /* 3dar_logo.png */; };
-		A68950061471E6B800DBDAA4 /* 3dar_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894FF31471E6B700DBDAA4 /* 3dar_logo@2x.png */; };
-		A68950071471E6B800DBDAA4 /* 3dar_marker_icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894FF41471E6B700DBDAA4 /* 3dar_marker_icon1.png */; };
-		A68950081471E6B800DBDAA4 /* 3dar_marker_icon1_focused.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894FF51471E6B700DBDAA4 /* 3dar_marker_icon1_focused.png */; };
-		A68950091471E6B800DBDAA4 /* 3dar_pano_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894FF61471E6B700DBDAA4 /* 3dar_pano_bg.png */; };
-		A689500A1471E6B800DBDAA4 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894FF71471E6B700DBDAA4 /* bubble.png */; };
-		A689500B1471E6B800DBDAA4 /* powered_by_3dar_310x50.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894FF81471E6B700DBDAA4 /* powered_by_3dar_310x50.png */; };
-		A689500C1471E6B800DBDAA4 /* powered_by_3dar_310x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6894FF91471E6B700DBDAA4 /* powered_by_3dar_310x50@2x.png */; };
-		A689500D1471E6B800DBDAA4 /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6894FFB1471E6B700DBDAA4 /* cube.obj */; };
-		A689500E1471E6B800DBDAA4 /* moebius.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6894FFC1471E6B700DBDAA4 /* moebius.obj */; };
-		A689500F1471E6B800DBDAA4 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6894FFD1471E6B700DBDAA4 /* sphere.obj */; };
-		A68950101471E6B800DBDAA4 /* star.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6894FFE1471E6B700DBDAA4 /* star.obj */; };
-		A68950111471E6B800DBDAA4 /* ufo.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6894FFF1471E6B700DBDAA4 /* ufo.obj */; };
-		A68950121471E6B800DBDAA4 /* lib3DAR_v2_1_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A68950011471E6B700DBDAA4 /* lib3DAR_v2_1_3.a */; };
-		A68950131471E6B800DBDAA4 /* SM3DAR_keys.txt in Resources */ = {isa = PBXBuildFile; fileRef = A68950031471E6B700DBDAA4 /* SM3DAR_keys.txt */; };
 		A68950171471E78500DBDAA4 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68950151471E78400DBDAA4 /* SettingsViewController.m */; };
 		A68950181471E78500DBDAA4 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68950161471E78500DBDAA4 /* SettingsViewController.xib */; };
 		A689501C1471E7B400DBDAA4 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A689501A1471E7B300DBDAA4 /* ARViewController.m */; };
@@ -588,6 +571,12 @@
 		A68950231471E92600DBDAA4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68950201471E92600DBDAA4 /* QuartzCore.framework */; };
 		A68950251471E93100DBDAA4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68950241471E93100DBDAA4 /* MapKit.framework */; };
 		A68950271471E93800DBDAA4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68950261471E93800DBDAA4 /* OpenGLES.framework */; };
+		A68950731471F7F500DBDAA4 /* BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68950711471F7F500DBDAA4 /* BarViewController.m */; };
+		A68950741471F7F600DBDAA4 /* BarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68950721471F7F500DBDAA4 /* BarViewController.xib */; };
+		A689507A1473152A00DBDAA4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A68950761473152A00DBDAA4 /* Default.png */; };
+		A689507B1473152A00DBDAA4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68950771473152A00DBDAA4 /* Default@2x.png */; };
+		A689507C1473152A00DBDAA4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A68950781473152A00DBDAA4 /* Icon.png */; };
+		A689507D1473152A00DBDAA4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68950791473152A00DBDAA4 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -611,7 +600,6 @@
 		A6894B981471CB2500DBDAA4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		A6894B9B1471CB2500DBDAA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ListViewController.xib; sourceTree = "<group>"; };
 		A6894B9E1471CB2500DBDAA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MapViewController.xib; sourceTree = "<group>"; };
-		A6894BA91471E03A00DBDAA4 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		A6894BB21471E34300DBDAA4 /* 01-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh.png"; sourceTree = "<group>"; };
 		A6894BB31471E34300DBDAA4 /* 01-refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh@2x.png"; sourceTree = "<group>"; };
 		A6894BB41471E34300DBDAA4 /* 02-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-redo.png"; sourceTree = "<group>"; };
@@ -1153,23 +1141,6 @@
 		A6894DCE1471E34400DBDAA4 /* 59-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "59-info@2x.png"; sourceTree = "<group>"; };
 		A6894DCF1471E34400DBDAA4 /* 60-dialpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60-dialpad.png"; sourceTree = "<group>"; };
 		A6894DD01471E34400DBDAA4 /* 60-dialpad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60-dialpad@2x.png"; sourceTree = "<group>"; };
-		A6894FEF1471E6B700DBDAA4 /* 3dar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3dar.plist; sourceTree = "<group>"; };
-		A6894FF21471E6B700DBDAA4 /* 3dar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_logo.png; sourceTree = "<group>"; };
-		A6894FF31471E6B700DBDAA4 /* 3dar_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3dar_logo@2x.png"; sourceTree = "<group>"; };
-		A6894FF41471E6B700DBDAA4 /* 3dar_marker_icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1.png; sourceTree = "<group>"; };
-		A6894FF51471E6B700DBDAA4 /* 3dar_marker_icon1_focused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1_focused.png; sourceTree = "<group>"; };
-		A6894FF61471E6B700DBDAA4 /* 3dar_pano_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_pano_bg.png; sourceTree = "<group>"; };
-		A6894FF71471E6B700DBDAA4 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
-		A6894FF81471E6B700DBDAA4 /* powered_by_3dar_310x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powered_by_3dar_310x50.png; sourceTree = "<group>"; };
-		A6894FF91471E6B700DBDAA4 /* powered_by_3dar_310x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powered_by_3dar_310x50@2x.png"; sourceTree = "<group>"; };
-		A6894FFB1471E6B700DBDAA4 /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
-		A6894FFC1471E6B700DBDAA4 /* moebius.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moebius.obj; sourceTree = "<group>"; };
-		A6894FFD1471E6B700DBDAA4 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
-		A6894FFE1471E6B700DBDAA4 /* star.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = star.obj; sourceTree = "<group>"; };
-		A6894FFF1471E6B700DBDAA4 /* ufo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo.obj; sourceTree = "<group>"; };
-		A68950011471E6B700DBDAA4 /* lib3DAR_v2_1_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib3DAR_v2_1_3.a; sourceTree = "<group>"; };
-		A68950021471E6B700DBDAA4 /* SM3DAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM3DAR.h; sourceTree = "<group>"; };
-		A68950031471E6B700DBDAA4 /* SM3DAR_keys.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SM3DAR_keys.txt; sourceTree = "<group>"; };
 		A68950141471E78400DBDAA4 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		A68950151471E78400DBDAA4 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		A68950161471E78500DBDAA4 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
@@ -1181,6 +1152,13 @@
 		A68950201471E92600DBDAA4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A68950241471E93100DBDAA4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A68950261471E93800DBDAA4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A68950701471F7F500DBDAA4 /* BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarViewController.h; sourceTree = "<group>"; };
+		A68950711471F7F500DBDAA4 /* BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarViewController.m; sourceTree = "<group>"; };
+		A68950721471F7F500DBDAA4 /* BarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarViewController.xib; sourceTree = "<group>"; };
+		A68950761473152A00DBDAA4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A68950771473152A00DBDAA4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A68950781473152A00DBDAA4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A68950791473152A00DBDAA4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1196,7 +1174,6 @@
 				A6894B7F1471CB2500DBDAA4 /* CoreGraphics.framework in Frameworks */,
 				A6894B7B1471CB2500DBDAA4 /* UIKit.framework in Frameworks */,
 				A6894B7D1471CB2500DBDAA4 /* Foundation.framework in Frameworks */,
-				A68950121471E6B800DBDAA4 /* lib3DAR_v2_1_3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1206,7 +1183,6 @@
 		A6894B6B1471CB2400DBDAA4 = {
 			isa = PBXGroup;
 			children = (
-				A6894FEE1471E6B700DBDAA4 /* 3DAR */,
 				A6894BB01471E34300DBDAA4 /* Assets */,
 				A6894B801471CB2500DBDAA4 /* Bar Finder */,
 				A6894B791471CB2500DBDAA4 /* Frameworks */,
@@ -1240,26 +1216,28 @@
 		A6894B801471CB2500DBDAA4 /* Bar Finder */ = {
 			isa = PBXGroup;
 			children = (
+				A6894B811471CB2500DBDAA4 /* Supporting Files */,
 				A6894B891471CB2500DBDAA4 /* AppDelegate.h */,
 				A6894B8A1471CB2500DBDAA4 /* AppDelegate.m */,
+				A68950191471E7B300DBDAA4 /* ARViewController.h */,
+				A689501A1471E7B300DBDAA4 /* ARViewController.m */,
+				A689501B1471E7B400DBDAA4 /* ARViewController.xib */,
 				A6894B8C1471CB2500DBDAA4 /* ListViewController.h */,
 				A6894B8D1471CB2500DBDAA4 /* ListViewController.m */,
+				A6894B9A1471CB2500DBDAA4 /* ListViewController.xib */,
 				A6894B8F1471CB2500DBDAA4 /* first.png */,
 				A6894B911471CB2500DBDAA4 /* first@2x.png */,
 				A6894B931471CB2500DBDAA4 /* MapViewController.h */,
 				A6894B941471CB2500DBDAA4 /* MapViewController.m */,
 				A6894B961471CB2500DBDAA4 /* second.png */,
 				A6894B981471CB2500DBDAA4 /* second@2x.png */,
-				A6894B9A1471CB2500DBDAA4 /* ListViewController.xib */,
 				A6894B9D1471CB2500DBDAA4 /* MapViewController.xib */,
-				A6894BA91471E03A00DBDAA4 /* MainWindow.xib */,
-				A6894B811471CB2500DBDAA4 /* Supporting Files */,
 				A68950141471E78400DBDAA4 /* SettingsViewController.h */,
 				A68950151471E78400DBDAA4 /* SettingsViewController.m */,
 				A68950161471E78500DBDAA4 /* SettingsViewController.xib */,
-				A68950191471E7B300DBDAA4 /* ARViewController.h */,
-				A689501A1471E7B300DBDAA4 /* ARViewController.m */,
-				A689501B1471E7B400DBDAA4 /* ARViewController.xib */,
+				A68950701471F7F500DBDAA4 /* BarViewController.h */,
+				A68950711471F7F500DBDAA4 /* BarViewController.m */,
+				A68950721471F7F500DBDAA4 /* BarViewController.xib */,
 			);
 			path = "Bar Finder";
 			sourceTree = "<group>";
@@ -1280,6 +1258,7 @@
 			children = (
 				A6894BB11471E34300DBDAA4 /* icons */,
 				A6894D431471E34400DBDAA4 /* mini-icons */,
+				A68950751473152A00DBDAA4 /* misc */,
 				A6894D581471E34400DBDAA4 /* symbols */,
 			);
 			name = Assets;
@@ -1848,60 +1827,15 @@
 			path = symbols;
 			sourceTree = "<group>";
 		};
-		A6894FEE1471E6B700DBDAA4 /* 3DAR */ = {
+		A68950751473152A00DBDAA4 /* misc */ = {
 			isa = PBXGroup;
 			children = (
-				A6894FEF1471E6B700DBDAA4 /* 3dar.plist */,
-				A6894FF01471E6B700DBDAA4 /* Assets */,
-				A68950001471E6B700DBDAA4 /* Lib */,
-				A68950021471E6B700DBDAA4 /* SM3DAR.h */,
-				A68950031471E6B700DBDAA4 /* SM3DAR_keys.txt */,
+				A68950761473152A00DBDAA4 /* Default.png */,
+				A68950771473152A00DBDAA4 /* Default@2x.png */,
+				A68950781473152A00DBDAA4 /* Icon.png */,
+				A68950791473152A00DBDAA4 /* Icon@2x.png */,
 			);
-			path = 3DAR;
-			sourceTree = "<group>";
-		};
-		A6894FF01471E6B700DBDAA4 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				A6894FF11471E6B700DBDAA4 /* images */,
-				A6894FFA1471E6B700DBDAA4 /* models */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		A6894FF11471E6B700DBDAA4 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				A6894FF21471E6B700DBDAA4 /* 3dar_logo.png */,
-				A6894FF31471E6B700DBDAA4 /* 3dar_logo@2x.png */,
-				A6894FF41471E6B700DBDAA4 /* 3dar_marker_icon1.png */,
-				A6894FF51471E6B700DBDAA4 /* 3dar_marker_icon1_focused.png */,
-				A6894FF61471E6B700DBDAA4 /* 3dar_pano_bg.png */,
-				A6894FF71471E6B700DBDAA4 /* bubble.png */,
-				A6894FF81471E6B700DBDAA4 /* powered_by_3dar_310x50.png */,
-				A6894FF91471E6B700DBDAA4 /* powered_by_3dar_310x50@2x.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		A6894FFA1471E6B700DBDAA4 /* models */ = {
-			isa = PBXGroup;
-			children = (
-				A6894FFB1471E6B700DBDAA4 /* cube.obj */,
-				A6894FFC1471E6B700DBDAA4 /* moebius.obj */,
-				A6894FFD1471E6B700DBDAA4 /* sphere.obj */,
-				A6894FFE1471E6B700DBDAA4 /* star.obj */,
-				A6894FFF1471E6B700DBDAA4 /* ufo.obj */,
-			);
-			path = models;
-			sourceTree = "<group>";
-		};
-		A68950001471E6B700DBDAA4 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				A68950011471E6B700DBDAA4 /* lib3DAR_v2_1_3.a */,
-			);
-			path = Lib;
+			path = misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1961,7 +1895,6 @@
 				A6894B991471CB2500DBDAA4 /* second@2x.png in Resources */,
 				A6894B9C1471CB2500DBDAA4 /* ListViewController.xib in Resources */,
 				A6894B9F1471CB2500DBDAA4 /* MapViewController.xib in Resources */,
-				A6894BAA1471E03A00DBDAA4 /* MainWindow.xib in Resources */,
 				A6894DD11471E34500DBDAA4 /* 01-refresh.png in Resources */,
 				A6894DD21471E34500DBDAA4 /* 01-refresh@2x.png in Resources */,
 				A6894DD31471E34500DBDAA4 /* 02-redo.png in Resources */,
@@ -2503,23 +2436,13 @@
 				A6894FEB1471E34500DBDAA4 /* 59-info@2x.png in Resources */,
 				A6894FEC1471E34500DBDAA4 /* 60-dialpad.png in Resources */,
 				A6894FED1471E34500DBDAA4 /* 60-dialpad@2x.png in Resources */,
-				A68950041471E6B700DBDAA4 /* 3dar.plist in Resources */,
-				A68950051471E6B700DBDAA4 /* 3dar_logo.png in Resources */,
-				A68950061471E6B800DBDAA4 /* 3dar_logo@2x.png in Resources */,
-				A68950071471E6B800DBDAA4 /* 3dar_marker_icon1.png in Resources */,
-				A68950081471E6B800DBDAA4 /* 3dar_marker_icon1_focused.png in Resources */,
-				A68950091471E6B800DBDAA4 /* 3dar_pano_bg.png in Resources */,
-				A689500A1471E6B800DBDAA4 /* bubble.png in Resources */,
-				A689500B1471E6B800DBDAA4 /* powered_by_3dar_310x50.png in Resources */,
-				A689500C1471E6B800DBDAA4 /* powered_by_3dar_310x50@2x.png in Resources */,
-				A689500D1471E6B800DBDAA4 /* cube.obj in Resources */,
-				A689500E1471E6B800DBDAA4 /* moebius.obj in Resources */,
-				A689500F1471E6B800DBDAA4 /* sphere.obj in Resources */,
-				A68950101471E6B800DBDAA4 /* star.obj in Resources */,
-				A68950111471E6B800DBDAA4 /* ufo.obj in Resources */,
-				A68950131471E6B800DBDAA4 /* SM3DAR_keys.txt in Resources */,
 				A68950181471E78500DBDAA4 /* SettingsViewController.xib in Resources */,
 				A689501D1471E7B400DBDAA4 /* ARViewController.xib in Resources */,
+				A68950741471F7F600DBDAA4 /* BarViewController.xib in Resources */,
+				A689507A1473152A00DBDAA4 /* Default.png in Resources */,
+				A689507B1473152A00DBDAA4 /* Default@2x.png in Resources */,
+				A689507C1473152A00DBDAA4 /* Icon.png in Resources */,
+				A689507D1473152A00DBDAA4 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2536,6 +2459,7 @@
 				A6894B951471CB2500DBDAA4 /* MapViewController.m in Sources */,
 				A68950171471E78500DBDAA4 /* SettingsViewController.m in Sources */,
 				A689501C1471E7B400DBDAA4 /* ARViewController.m in Sources */,
+				A68950731471F7F500DBDAA4 /* BarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

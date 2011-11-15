@@ -7,6 +7,7 @@
 //
 
 #import "ListViewController.h"
+#import "BarViewController.h"
 
 @implementation ListViewController
 
@@ -14,8 +15,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        self.title = @"List";
     }
     return self;
 }
@@ -31,7 +31,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.navigationController.navigationBarHidden = YES;
+
 }
 
 - (void)viewDidUnload
@@ -44,6 +46,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -54,17 +57,24 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
 	[super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-	[super viewDidDisappear:animated];
+	[super viewDidDisappear:animated];    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)selectBar:(id)sender 
+{
+    BarViewController *bvc = [[BarViewController alloc] init];
+    [self.navigationController pushViewController:bvc animated:YES];
 }
 
 @end
