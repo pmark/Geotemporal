@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+{
+    IBOutlet UITabBarController *tabBarController;
+}
+@property (strong, nonatomic) IBOutlet UIWindow *window;
 
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (strong, nonatomic) IBOutlet UITabBarController *tabBarController;
 
 @end

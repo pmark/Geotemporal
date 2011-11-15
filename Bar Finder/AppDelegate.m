@@ -8,25 +8,55 @@
 
 #import "AppDelegate.h"
 
-#import "FirstViewController.h"
-
-#import "SecondViewController.h"
+#import "ListViewController.h"
+#import "SettingsViewController.h"
+#import "ARViewController.h"
+#import "MapViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarController = _tabBarController;
+@synthesize tabBarController;// = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+
+    
+    // Make nav controllers for each view controller.
+    
+    
+    UIViewController *listvc = [[ListViewController alloc] initWithNibName:@"ListViewController" bundle:nil];
+    UINavigationController *listnav = [[UINavigationController alloc] initWithRootViewController:listvc];
+    listnav.title = @"List";
+    listnav.tabBarItem.image = [UIImage imageNamed:@"179-notepad.png"];
+    
+    UIViewController *mapvc = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    UINavigationController *mapnav = [[UINavigationController alloc] initWithRootViewController:mapvc];
+    mapnav.title = @"Map";
+    mapnav.tabBarItem.image = [UIImage imageNamed:@"07-map-marker.png"];
+
+    UIViewController *arvc = [[ARViewController alloc] initWithNibName:@"ARViewController" bundle:nil];
+    UINavigationController *arnav = [[UINavigationController alloc] initWithRootViewController:arvc];
+    arnav.title = @"3DAR";
+    arnav.tabBarItem.image = [UIImage imageNamed:@"73-radar.png"];
+    
+    UIViewController *settingsvc = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+    UINavigationController *settingsnav = [[UINavigationController alloc] initWithRootViewController:settingsvc];
+    settingsnav.title = @"Settings";
+    settingsnav.tabBarItem.image = [UIImage imageNamed:@"19-gear.png"];
+    
+
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:listnav, mapnav, arnav, settingsnav, nil];
+    
+    NSLog(@"\n\n\ntab bar view controllers: %@", self.tabBarController.viewControllers);
+    
+//    [self.window addSubview:self.tabBarController.view];
     self.window.rootViewController = self.tabBarController;
+        
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

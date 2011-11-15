@@ -1,0 +1,16 @@
+Replace all text in this file with device and/or application keys, one per line.  Go to http://3dar.us/request/ to request keys.
+
+We recommend that you download, build and install the Yorient sample app.  Yorient's code is what we consider best practices for using 3DAR.  Find yorient at https://github.com/SpotMetrix/Yorient
+
+It wouldn't hurt to visit http://3dar.us/docs/ and go through a tutorial too.
+Ask questions to the community at http://groups.google.com/group/3dar
+Post screenshots to http://www.flickr.com/groups/3dar/
+
+Good luck!
+
+P. Mark Anderson
+CTO, Spot Metrix
+412 NW Couch St #401
+Portland, OR  97209
+mark@spotmetrix.com
+@pmark on twitter
