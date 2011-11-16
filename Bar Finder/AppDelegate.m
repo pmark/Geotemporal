@@ -13,10 +13,12 @@
 #import "ARViewController.h"
 #import "MapViewController.h"
 
+
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
+@synthesize server;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -37,7 +39,7 @@
     UIViewController *arvc = [[ARViewController alloc] initWithNibName:@"ARViewController" bundle:nil];
     UINavigationController *arnav = [[UINavigationController alloc] initWithRootViewController:arvc];
     arnav.title = @"3DAR";
-    arnav.tabBarItem.image = [UIImage imageNamed:@"3dar@2x.png"];
+    arnav.tabBarItem.image = [UIImage imageNamed:@"3dar.png"];
     
     UIViewController *settingsvc = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
     UINavigationController *settingsnav = [[UINavigationController alloc] initWithRootViewController:settingsvc];
@@ -54,6 +56,7 @@
     
     CouchbaseMobile* cb = [[CouchbaseMobile alloc] init];
     cb.delegate = self;
+    
     NSAssert([cb start], @"Couchbase didn't start! Error = %@", cb.error);
     
     return YES;
@@ -112,11 +115,126 @@
 }
 */
 
--(void)couchbaseMobile:(CouchbaseMobile*)couchbase didStart:(NSURL*)serverURL 
+
+
+- (void) runQuery
 {
-    NSLog(@"Couchbase is Ready, go! %@", serverURL);
+    NSLog(@"The db server url: %@", [dbServerURL absoluteString]);
+    
+//    NSString *strURL = [NSString stringWithFormat:@"%@barfinder/_design/geo/_spatial/full?bbox=-122.7,45.5,-122.6,45.6", [dbServerURL absoluteString]];
+    
+//    CouchQuery *query = [[CouchQuery alloc] initWithURL:[NSURL URLWithString:strURL]];
+    
+    
+    CouchDesignDocument* design = [db designDocumentWithName:@"geo"];
+    design.language = kCouchLanguageJavaScript;
+    [design defineViewNamed: @"spatial"
+                        map: @"function(doc) { if (doc.loc) { emit(doc._id, { type: \"Point\", coordinates: [doc.loc[0], doc.loc[1]] }); }};"];
+     
+
+    CouchQuery *query = [design queryViewNamed:@"spatial"];
+
+
+    
+    RESTOperation *op = [query start];
+    
+    if (![op wait] && op.httpStatus != 412) 
+    {   // 412 = Conflict; just means DB already exists
+        // TODO: Report error
+        NSLog(@"OMG: Couldn't query database: %@", op.error);
+    }
+    else
+
+    {
+        CouchQueryEnumerator *results = op.resultObject;
+
+        for (CouchQueryRow *row in [query rows]) 
+        {
+            NSLog(@"row: %@, %@", row.key, row);
+//            Bar *bar = [Bar modelForDocument:row.document];
+//            [mutableFetchResults addObject:bar];
+        }
+
+        NSLog(@"results: %@", results);
+    }
 }
 
+-(void)couchbaseMobile:(CouchbaseMobile*)couchbase didStart:(NSURL*)serverURL 
+{
+    dbServerURL = serverURL;
+    NSLog(@"Couchbase is Ready, go! %@", serverURL);
+
+#ifdef DEBUG
+    gCouchLogLevel = 1;  // Turn on some basic logging in CouchCocoa
+#endif
+    
+    if (!self.server) 
+    {
+        // Do this the first time the server starts, i.e. not after a wake-from-bg:
+        self.server = [[CouchServer alloc] initWithURL: serverURL];
+
+        NSString* dbPath = [[NSBundle mainBundle] pathForResource:@"barfinder" ofType:@"couch"];
+        NSAssert(dbPath, @"Couldn't find barfinder.couch");
+        
+        [couchbase installDefaultDatabase:dbPath];
+        
+        
+
+
+        db = [self.server databaseNamed: @"barfinder"];
+        
+        RESTOperation *op = [db create];
+
+        if (![op wait] && op.httpStatus != 412) 
+        {   // 412 = Conflict; just means DB already exists
+            // TODO: Report error
+            NSLog(@"OMG: Couldn't create database: %@", op.error);
+            exit(1);    // Panic!
+        }
+        
+
+        /*
+        // sync, but not every time. just sync so we can get the datas.
+        NSURL *url = [NSURL URLWithString:@"http://login:password@boxelder.couchone.com/barfinder"];
+//        CouchReplication *replication = [database pullFromDatabaseAtURL:url options:kCouchReplicationCreateTarget];
+        
+        NSArray* repls = [db replicateWithURL:url exclusively:YES];
+        
+        _pull = [repls objectAtIndex: 0];
+//        _push = [repls objectAtIndex: 1];
+        
+        [_pull addObserver: self forKeyPath: @"completed" options: 0 context: NULL];
+//        [_push addObserver: self forKeyPath: @"completed" options: 0 context: NULL];
+         */
+
+        
+    }
+    
+    NSLog(@"\n\n\n\nDoc count: %i\n\n\n\n", [db getDocumentCount]);
+    
+    [self runQuery];
+}
+
+- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object 
+                         change:(NSDictionary *)change context:(void *)context
+{
+    if (object == _pull) {
+        unsigned completed = _pull.completed;
+        unsigned total = _pull.total;
+
+        NSLog(@"SYNC progress: %u / %u", completed, total);
+        
+        if (total > 0 && completed < total) 
+        {
+            db.server.activityPollInterval = 0.5;   // poll often while progress is showing
+        } 
+        else 
+        {
+            db.server.activityPollInterval = 2.0;   // poll less often at other times
+        }
+    }
+}
+         
 -(void)couchbaseMobile:(CouchbaseMobile*)couchbase failedToStart:(NSError*)error 
 {
     NSAssert(NO, @"Couchbase failed to initialize: %@", error);
