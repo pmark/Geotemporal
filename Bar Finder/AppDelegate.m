@@ -37,7 +37,7 @@
     UIViewController *arvc = [[ARViewController alloc] initWithNibName:@"ARViewController" bundle:nil];
     UINavigationController *arnav = [[UINavigationController alloc] initWithRootViewController:arvc];
     arnav.title = @"3DAR";
-    arnav.tabBarItem.image = [UIImage imageNamed:@"73-radar.png"];
+    arnav.tabBarItem.image = [UIImage imageNamed:@"3dar@2x.png"];
     
     UIViewController *settingsvc = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
     UINavigationController *settingsnav = [[UINavigationController alloc] initWithRootViewController:settingsvc];
