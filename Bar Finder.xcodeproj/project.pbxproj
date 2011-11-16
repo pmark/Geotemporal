@@ -577,6 +577,11 @@
 		A689507B1473152A00DBDAA4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68950771473152A00DBDAA4 /* Default@2x.png */; };
 		A689507C1473152A00DBDAA4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A68950781473152A00DBDAA4 /* Icon.png */; };
 		A689507D1473152A00DBDAA4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A68950791473152A00DBDAA4 /* Icon@2x.png */; };
+		A68950801473664F00DBDAA4 /* Couchbase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A689507E1473664E00DBDAA4 /* Couchbase.framework */; };
+		A68950811473664F00DBDAA4 /* CouchCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A689507F1473664E00DBDAA4 /* CouchCocoa.framework */; };
+		A6895083147366D900DBDAA4 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6895082147366D900DBDAA4 /* libstdc++.dylib */; };
+		A6895085147366E300DBDAA4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6895084147366E300DBDAA4 /* Security.framework */; };
+		A6895087147366EC00DBDAA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6895086147366EB00DBDAA4 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1159,6 +1164,11 @@
 		A68950771473152A00DBDAA4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A68950781473152A00DBDAA4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		A68950791473152A00DBDAA4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A689507E1473664E00DBDAA4 /* Couchbase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Couchbase.framework; path = CouchDB/Couchbase.framework; sourceTree = "<group>"; };
+		A689507F1473664E00DBDAA4 /* CouchCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchCocoa.framework; path = CouchDB/CouchCocoa.framework; sourceTree = "<group>"; };
+		A6895082147366D900DBDAA4 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		A6895084147366E300DBDAA4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A6895086147366EB00DBDAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1166,6 +1176,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6895087147366EC00DBDAA4 /* libz.dylib in Frameworks */,
+				A6895085147366E300DBDAA4 /* Security.framework in Frameworks */,
+				A6895083147366D900DBDAA4 /* libstdc++.dylib in Frameworks */,
 				A68950271471E93800DBDAA4 /* OpenGLES.framework in Frameworks */,
 				A68950251471E93100DBDAA4 /* MapKit.framework in Frameworks */,
 				A68950211471E92600DBDAA4 /* CoreLocation.framework in Frameworks */,
@@ -1174,6 +1187,8 @@
 				A6894B7F1471CB2500DBDAA4 /* CoreGraphics.framework in Frameworks */,
 				A6894B7B1471CB2500DBDAA4 /* UIKit.framework in Frameworks */,
 				A6894B7D1471CB2500DBDAA4 /* Foundation.framework in Frameworks */,
+				A68950801473664F00DBDAA4 /* Couchbase.framework in Frameworks */,
+				A68950811473664F00DBDAA4 /* CouchCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1183,6 +1198,9 @@
 		A6894B6B1471CB2400DBDAA4 = {
 			isa = PBXGroup;
 			children = (
+				A6895086147366EB00DBDAA4 /* libz.dylib */,
+				A6895084147366E300DBDAA4 /* Security.framework */,
+				A6895082147366D900DBDAA4 /* libstdc++.dylib */,
 				A6894BB01471E34300DBDAA4 /* Assets */,
 				A6894B801471CB2500DBDAA4 /* Bar Finder */,
 				A6894B791471CB2500DBDAA4 /* Frameworks */,
@@ -1201,6 +1219,8 @@
 		A6894B791471CB2500DBDAA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A689507E1473664E00DBDAA4 /* Couchbase.framework */,
+				A689507F1473664E00DBDAA4 /* CouchCocoa.framework */,
 				A68950261471E93800DBDAA4 /* OpenGLES.framework */,
 				A68950241471E93100DBDAA4 /* MapKit.framework */,
 				A689501E1471E92500DBDAA4 /* CoreLocation.framework */,
@@ -1848,6 +1868,7 @@
 				A6894B721471CB2400DBDAA4 /* Sources */,
 				A6894B731471CB2400DBDAA4 /* Frameworks */,
 				A6894B741471CB2400DBDAA4 /* Resources */,
+				A689508C14736D8700DBDAA4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2448,6 +2469,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A689508C14736D8700DBDAA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The 'CouchbaseResources' subfolder of the framework contains \n# resources needed at runtime. Copy it into the app bundle:\nrsync -a \"${SRCROOT}/CouchDB/Couchbase.framework/CouchbaseResources\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6894B721471CB2400DBDAA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -2549,6 +2586,10 @@
 		A6894BA31471CB2500DBDAA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CouchDB\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bar Finder/Bar Finder-Prefix.pch";
 				INFOPLIST_FILE = "Bar Finder/Bar Finder-Info.plist";
@@ -2564,6 +2605,10 @@
 		A6894BA41471CB2500DBDAA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CouchDB\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bar Finder/Bar Finder-Prefix.pch";
 				INFOPLIST_FILE = "Bar Finder/Bar Finder-Info.plist";

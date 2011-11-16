@@ -48,12 +48,13 @@
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:listnav, mapnav, arnav, settingsnav, nil];
     
-    NSLog(@"\n\n\ntab bar view controllers: %@", self.tabBarController.viewControllers);
-    
-//    [self.window addSubview:self.tabBarController.view];
     self.window.rootViewController = self.tabBarController;
         
     [self.window makeKeyAndVisible];
+    
+    CouchbaseMobile* cb = [[CouchbaseMobile alloc] init];
+    cb.delegate = self;
+    NSAssert([cb start], @"Couchbase didn't start! Error = %@", cb.error);
     
     return YES;
 }
@@ -110,5 +111,15 @@
 {
 }
 */
+
+-(void)couchbaseMobile:(CouchbaseMobile*)couchbase didStart:(NSURL*)serverURL 
+{
+    NSLog(@"Couchbase is Ready, go! %@", serverURL);
+}
+
+-(void)couchbaseMobile:(CouchbaseMobile*)couchbase failedToStart:(NSError*)error 
+{
+    NSAssert(NO, @"Couchbase failed to initialize: %@", error);
+}
 
 @end

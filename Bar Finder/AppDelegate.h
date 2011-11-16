@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Couchbase/CouchbaseMobile.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate,CouchbaseDelegate>
 {
     IBOutlet UITabBarController *tabBarController;
 }
+
 @property (strong, nonatomic) IBOutlet UIWindow *window;
 
 @property (strong, nonatomic) IBOutlet UITabBarController *tabBarController;
