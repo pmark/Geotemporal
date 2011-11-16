@@ -582,6 +582,8 @@
 		A6895083147366D900DBDAA4 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6895082147366D900DBDAA4 /* libstdc++.dylib */; };
 		A6895085147366E300DBDAA4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6895084147366E300DBDAA4 /* Security.framework */; };
 		A6895087147366EC00DBDAA4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6895086147366EB00DBDAA4 /* libz.dylib */; };
+		A689508F14736EA400DBDAA4 /* 3dar.png in Resources */ = {isa = PBXBuildFile; fileRef = A689508D14736EA400DBDAA4 /* 3dar.png */; };
+		A689509014736EA400DBDAA4 /* 3dar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A689508E14736EA400DBDAA4 /* 3dar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1169,6 +1171,8 @@
 		A6895082147366D900DBDAA4 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		A6895084147366E300DBDAA4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A6895086147366EB00DBDAA4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A689508D14736EA400DBDAA4 /* 3dar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3dar.png; path = "Bar Finder/Assets/icons/3dar.png"; sourceTree = SOURCE_ROOT; };
+		A689508E14736EA400DBDAA4 /* 3dar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3dar@2x.png"; path = "Bar Finder/Assets/icons/3dar@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1850,6 +1854,8 @@
 		A68950751473152A00DBDAA4 /* misc */ = {
 			isa = PBXGroup;
 			children = (
+				A689508D14736EA400DBDAA4 /* 3dar.png */,
+				A689508E14736EA400DBDAA4 /* 3dar@2x.png */,
 				A68950761473152A00DBDAA4 /* Default.png */,
 				A68950771473152A00DBDAA4 /* Default@2x.png */,
 				A68950781473152A00DBDAA4 /* Icon.png */,
@@ -2464,6 +2470,8 @@
 				A689507B1473152A00DBDAA4 /* Default@2x.png in Resources */,
 				A689507C1473152A00DBDAA4 /* Icon.png in Resources */,
 				A689507D1473152A00DBDAA4 /* Icon@2x.png in Resources */,
+				A689508F14736EA400DBDAA4 /* 3dar.png in Resources */,
+				A689509014736EA400DBDAA4 /* 3dar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
